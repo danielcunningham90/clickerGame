@@ -1,0 +1,12 @@
+main {
+  width: 100%;
+  max-width: 80rem;
+  overflow: hidden;
+  background: $clr-white;
+
+  @media (min-width: 768px) {
+    width: 95%;
+    background: transparentize($clr-white, 0.8);
+    border-radius: $spc-default;
+  }
+}

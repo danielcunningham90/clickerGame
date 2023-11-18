@@ -1,0 +1,30 @@
+.content {
+  padding: $spc-large $spc-default;
+  display: grid;
+  place-items: center;
+  gap: $spc-default;
+
+  .clicker {
+    max-width: 30rem;
+    aspect-ratio: 1;
+    background: transparentize($clr-white, 0.8);
+    border-radius: 50%;
+    display: grid;
+    place-items: center;
+    cursor: pointer;
+    transition: all 150ms;
+
+    &__image {
+      transform: scale(0.7);
+      transition: all 150ms;
+    }
+
+    &:hover {
+      transform: rotate(-10deg);
+
+      .clicker__image {
+        transform: scale(0.8);
+      }
+    }
+  }
+}

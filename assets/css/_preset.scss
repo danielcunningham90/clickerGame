@@ -1,0 +1,50 @@
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+}
+
+html {
+  font-size: 10px;
+}
+
+body {
+  font-family: $ff-default;
+  font-weight: $fw-default;
+  font-size: $fs-default;
+  color: $clr-second;
+  background: linear-gradient(to bottom, $clr-light, $clr-muted);
+
+  @media (min-width: 768px) {
+    display: grid;
+    place-items: center;
+  }
+}
+
+a {
+  text-decoration: none;
+  color: darken($clr-prime, 10%);
+
+  &:hover {
+    color: $clr-prime;
+  }
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  vertical-align: top;
+}
+
+h1,
+h2,
+h3 {
+  font-family: $ff-heading;
+  font-weight: $fw-default;
+}

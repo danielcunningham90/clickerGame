@@ -1,0 +1,170 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Anton&display=swap");
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+}
+
+html {
+  font-size: 10px;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-size: 1.6rem;
+  color: #222f3e;
+  background: linear-gradient(to bottom, #c8d6e5, #576574);
+}
+@media (min-width: 768px) {
+  body {
+    display: grid;
+    place-items: center;
+  }
+}
+
+a {
+  text-decoration: none;
+  color: #009fa0;
+}
+a:hover {
+  color: #00d2d3;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  vertical-align: top;
+}
+
+h1,
+h2,
+h3 {
+  font-family: "Anton", sans-serif;
+  font-weight: 400;
+}
+
+.btn {
+  display: inline-block;
+  padding: 1rem 2rem;
+  text-transform: uppercase;
+  font-size: 1.2rem;
+  font-weight: 700;
+  border-radius: 0.5rem;
+  text-align: center;
+}
+.btn-alert {
+  background: #ee5253;
+}
+.btn-upgrade {
+  background: #00d2d3;
+  color: #ffffff;
+}
+
+main {
+  width: 100%;
+  max-width: 80rem;
+  overflow: hidden;
+  background: #ffffff;
+}
+@media (min-width: 768px) {
+  main {
+    width: 95%;
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 2rem;
+  }
+}
+
+header {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+  background: #222f3e;
+  color: #ffffff;
+}
+header .brand {
+  font-family: "Anton", sans-serif;
+  letter-spacing: 0.1rem;
+  text-transform: uppercase;
+  color: #ffffff;
+  transition: all 150ms;
+}
+header .brand span {
+  color: #00d2d3;
+  transition: all 150ms;
+}
+header .brand:hover {
+  color: #00d2d3;
+}
+header .brand:hover span {
+  color: #00b9ba;
+}
+header .clicker-stats {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+  width: 100%;
+  text-align: center;
+}
+header .clicker-stats > div {
+  background: rgba(255, 255, 255, 0.2);
+  padding: 1rem 2rem;
+  border-radius: 1rem;
+}
+header .clicker-stats > div::before {
+  display: block;
+  font-size: 1.1rem;
+  text-transform: uppercase;
+}
+header .clicker-stats__counter::before {
+  content: "Clicks";
+}
+header .clicker-stats__cpc::before {
+  content: "CPC";
+}
+header .clicker-stats__cps::before {
+  content: "CPS";
+}
+
+.content {
+  padding: 5rem 2rem;
+  display: grid;
+  place-items: center;
+  gap: 2rem;
+}
+.content .clicker {
+  max-width: 30rem;
+  aspect-ratio: 1;
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+  cursor: pointer;
+  transition: all 150ms;
+}
+.content .clicker__image {
+  transform: scale(0.7);
+  transition: all 150ms;
+}
+.content .clicker:hover {
+  transform: rotate(-10deg);
+}
+.content .clicker:hover .clicker__image {
+  transform: scale(0.8);
+}
+
+footer {
+  background: #222f3e;
+  color: #ffffff;
+  padding: 2rem;
+}

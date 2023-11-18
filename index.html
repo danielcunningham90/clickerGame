@@ -4,6 +4,39 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Clicker Game 1.0 by Daniel Cunningham</title>
+    <link rel="stylesheet" href="./assets/css/style.css" />
   </head>
-  <body></body>
+  <body>
+    <main>
+      <header>
+        <a href="#" class="brand"><span>Clicker</span>Game</a>
+        <div class="clicker-stats">
+          <div class="clicker-stats__counter">0000</div>
+          <div class="clicker-stats__cpc">0000</div>
+          <div class="clicker-stats__cps">0</div>
+        </div>
+      </header>
+      <section class="content">
+        <div class="clicker">
+          <img src="./assets/img/clicker.png" alt="" class="clicker__image" />
+        </div>
+
+        <div class="upgrade">
+          <div class="btn btn-upgrade upgrade-cpc">
+            Upgrade CPC<br />
+            -<span class="upgrade-cpc__cost">0</span> Clicks / +<span
+              class="upgrade-cpc__increase"
+              >0</span
+            >
+            CPC
+          </div>
+        </div>
+      </section>
+      <footer>
+        <div class="btn btn-alert reset-button">Spiel zurücksetzen</div>
+      </footer>
+
+      <script src="./assets/js/game.js"></script>
+    </main>
+  </body>
 </html>
